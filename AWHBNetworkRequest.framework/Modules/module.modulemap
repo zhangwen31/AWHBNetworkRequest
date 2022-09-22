@@ -1,0 +1,6 @@
+framework module AWHBNetworkRequest {
+  umbrella header "AWHBNetworkRequest.h"
+
+  export *
+  module * { export * }
+}
