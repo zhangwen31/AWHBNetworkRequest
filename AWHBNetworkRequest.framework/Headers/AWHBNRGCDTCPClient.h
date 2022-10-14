@@ -12,8 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface AWHBNRGCDTCPClient : NSObject
 
 + (instancetype)sharedInstance;
-- (void)connectWithHost:(NSString *)host port:(int)port;
-- (void)connectToAddress:(NSString *)remoteAddr;
+- (void)connectWithHost:(NSString *)host port:(NSInteger)port url:(NSString *)url;
 - (void)disconnect;
 - (void)send:(NSData *)data;
 
