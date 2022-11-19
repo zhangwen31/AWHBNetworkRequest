@@ -29,8 +29,8 @@ typedef NS_ENUM(NSInteger, AWHBNRTCPClientEvent) {
 @property (nonatomic, assign) BOOL bStop;
 
 + (instancetype)sharedInstance;
-
 - (void)connectWithHost:(NSString *)host port:(int)port;
+- (void)connectWithHost:(NSString *)host port:(int)port withTimeout:(NSTimeInterval)timeout;
 - (void)disconnect;
 - (void)send:(NSData *)data;
 
