@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBNetworkRequest"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "A short description of AWHBNetworkRequest."
 
   # This description is used to generate tags and improve search results.
@@ -37,7 +37,8 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   #   * 最后，不要担心缩进，CocoaPods会剥去它！
   s.description  = %{
-  TODO: 添加描述内容
+   AWHBNetworkRequest是一个iOS网络请求框架，基于AFNetworking二次封装，
+   提供请求拦截、响应缓存、JSON自动解析等功能，简化网络层代码，支持组件化项目集成。
   }
 
   s.homepage     = "https://github.com/zhangwen31/AWHBNetworkRequest"
@@ -82,14 +83,18 @@ Pod::Spec.new do |s|
   #  部署目标。您可以选择在平台之后包含目标。
   #
 
-  s.platform = :ios, "12.0"  # 确保你的库最低支持12.0
+  # 基础部署目标设置
+  s.platform = :ios, "13.0"
+  s.swift_version = "5.0"  # 若使用Swift，指定对应版本
+
+  # 强制所有依赖库使用iOS 13.0（关键）
   s.pod_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"  # 强制依赖库使用12.0
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    "CLANG_ENABLE_MODULES" => "YES"
   }
   s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"  # 强制用户项目使用12.0
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
   }
-  # s.platform     = :ios, "9.0"
 
   #  When using multiple platforms
   s.ios.deployment_target = "13.0"
@@ -198,13 +203,13 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency "AWHBoneRuntime"
-  s.dependency "MBProgressHUD"
-  s.dependency "AFNetworking"
-  s.dependency "Masonry"
+  s.dependency "AWHBoneRuntime", '~> 1.0.0'
+  s.dependency "MBProgressHUD", '~> 1.1.0'
+  s.dependency "AFNetworking", '~> 4.0.0'
+  s.dependency "Masonry", '~> 1.1.0'
   s.dependency "SDWebImage"
-  s.dependency "CocoaAsyncSocket"
-  s.dependency "AWHBoneResources"
-  s.dependency "YYModel"
+  s.dependency "CocoaAsyncSocket", '~> 1.0.0'
+  s.dependency "AWHBoneResources", '~> 1.0.0'
+  s.dependency "YYModel", '~> 1.0.4'
 
 end
