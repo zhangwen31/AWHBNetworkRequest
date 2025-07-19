@@ -207,7 +207,7 @@ Pod::Spec.new do |s|
   s.dependency "AFNetworking", '~> 4.0.0'
   s.dependency "Masonry", '~> 1.1.0'
   s.dependency "SDWebImage", '~> 5.13.3'
-  s.dependency 'CocoaAsyncSocket', '~> '7.6.5'
+  s.dependency 'CocoaAsyncSocket', '~> 7.6.5'
   s.dependency "AWHBoneResources"
   s.dependency "YYModel", '~> 1.0.4'
 
