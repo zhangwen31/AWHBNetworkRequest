@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBNetworkRequest"
-  s.version      = "1.0.3"
+  s.version      = "1.0.0"
   s.summary      = "A short description of AWHBNetworkRequest."
 
   # This description is used to generate tags and improve search results.
