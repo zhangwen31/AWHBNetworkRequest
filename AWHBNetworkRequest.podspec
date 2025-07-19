@@ -87,15 +87,6 @@ Pod::Spec.new do |s|
   s.platform = :ios, "13.0"
   s.swift_version = "5.0"  # 若使用Swift，指定对应版本
 
-  # 强制所有依赖库使用iOS 13.0（关键）
-  s.pod_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
-    "CLANG_ENABLE_MODULES" => "YES"
-  }
-  s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
-  }
-
   #  When using multiple platforms
   s.ios.deployment_target = "13.0"
   # s.osx.deployment_target = "10.7"
@@ -133,7 +124,15 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = ['AWHBNetworkRequest.framework']
 
-  s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
+  # 强制所有依赖库使用iOS 13.0（关键）
+  s.pod_target_xcconfig = {
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    "CLANG_ENABLE_MODULES" => "YES",
+    'VALID_ARCHS' => 'x86_64 armv7 arm64'
+  }
+  s.user_target_xcconfig = {
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
+  }
 
   s.source_files = 'AWHBNetworkRequest.framework/Headers/*h'
   s.static_framework = true
@@ -207,8 +206,8 @@ Pod::Spec.new do |s|
   s.dependency "MBProgressHUD", '~> 1.1.0'
   s.dependency "AFNetworking", '~> 4.0.0'
   s.dependency "Masonry", '~> 1.1.0'
-  s.dependency "SDWebImage"
-  s.dependency "CocoaAsyncSocket"
+  s.dependency "SDWebImage", '~> 5.13.3'
+  s.dependency 'CocoaAsyncSocket', '~> '7.6.5'
   s.dependency "AWHBoneResources"
   s.dependency "YYModel", '~> 1.0.4'
 
