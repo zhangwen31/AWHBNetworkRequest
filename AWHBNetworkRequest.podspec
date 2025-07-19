@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBNetworkRequest"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A short description of AWHBNetworkRequest."
 
   # This description is used to generate tags and improve search results.
@@ -203,13 +203,13 @@ Pod::Spec.new do |s|
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
-  s.dependency "AWHBoneRuntime", '~> 1.0.0'
+  s.dependency "AWHBoneRuntime"
   s.dependency "MBProgressHUD", '~> 1.1.0'
   s.dependency "AFNetworking", '~> 4.0.0'
   s.dependency "Masonry", '~> 1.1.0'
   s.dependency "SDWebImage"
-  s.dependency "CocoaAsyncSocket", '~> 1.0.0'
-  s.dependency "AWHBoneResources", '~> 1.0.0'
+  s.dependency "CocoaAsyncSocket"
+  s.dependency "AWHBoneResources"
   s.dependency "YYModel", '~> 1.0.4'
 
 end
