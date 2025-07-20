@@ -34,8 +34,7 @@ Pod::Spec.new do |s|
     "OTHER_LDFLAGS" => "-ObjC"  # 确保链接器正确处理类别（Category）符号
   }
   s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
-    "VALID_ARCHS" => "x86_64 arm64"
+    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
   }
 
   # 编译配置
