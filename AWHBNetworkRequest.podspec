@@ -43,7 +43,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
     "CLANG_ENABLE_MODULES" => "YES",
-    "VALID_ARCHS" => "x86_64 arm64 armv7" 
+    "VALID_ARCHS" => "x86_64 arm64 armv7"
   }
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
@@ -59,13 +59,13 @@ Pod::Spec.new do |s|
 
   # ――― 依赖库（指定明确版本，避免兼容问题） ――――――――――――――――――――――――――――――――――――――――――――――――――― #
   # 修复：指定具体版本（与实际存在的版本匹配，避免部署目标冲突）
-  s.dependency "AWHBoneRuntime"
-  s.dependency "AWHBoneResources"
-  s.dependency "MBProgressHUD"
-  s.dependency "AFNetworking"
-  s.dependency "Masonry"
-  s.dependency "SDWebImage"
-  s.dependency "CocoaAsyncSocket"
-  s.dependency "YYModel"
+  s.dependency 'AWHBoneRuntime'       # 匹配实际存在的版本
+  s.dependency 'AWHBoneResources'    # 匹配实际存在的版本
+  s.dependency 'MBProgressHUD', '~> 1.1.0'        # 支持iOS 9.0+，兼容12.0
+  s.dependency 'AFNetworking', '~> 4.0.1'         # 支持iOS 10.0+，兼容12.0
+  s.dependency 'Masonry', '~> 1.1.0'             # 支持iOS 10.0+，兼容12.0
+  s.dependency 'SDWebImage'         # 明确支持iOS 12.0+，兼容12.0
+  s.dependency 'CocoaAsyncSocket', '~> 7.6.5'     # 支持iOS 9.0+，兼容12.0
+  s.dependency 'YYModel", '~> 1.0.4'
 
 end
