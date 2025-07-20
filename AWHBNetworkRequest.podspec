@@ -37,6 +37,18 @@ Pod::Spec.new do |s|
   s.vendored_frameworks = ['AWHBNetworkRequest.framework']  # 确保框架路径正确
   s.source_files = 'AWHBNetworkRequest.framework/Headers/*.h'  # 修复通配符（*h → *.h）
   s.static_framework = true  # 若为静态框架，保持此设置
+  
+  # ――― 部署目标强制兼容（核心修复） ――――――――――――――――――――――――――――――――――――――――――――――――――― #
+  # 强制所有依赖库使用iOS 13.0，解决libarclite缺失问题
+  s.pod_target_xcconfig = {
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    "CLANG_ENABLE_MODULES" => "YES",
+    "VALID_ARCHS" => "x86_64 arm64"  # 移除armv7（iOS 13+已不支持32位架构）
+  }
+  s.user_target_xcconfig = {
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
+  }
+
 
 
   # ――― 前缀头文件与编译配置 ――――――――――――――――――――――――――――――――――――――――――――――――――― #
