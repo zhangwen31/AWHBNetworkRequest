@@ -176,9 +176,9 @@ Pod::Spec.new do |s|
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
   s.dependency "AWHBoneRuntime"
-  s.dependency "MBProgressHUD"
+  s.dependency "MBProgressHUD", "~> 1.1.0"
   s.dependency "AFNetworking"
-  s.dependency "Masonry"
+  s.dependency "Masonry", "~> 1.1.0"
   s.dependency "SDWebImage"
   s.dependency "AWHBoneResources"
   s.dependency "CocoaAsyncSocket"
