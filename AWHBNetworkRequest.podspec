@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.description  = %{
     AWHBNetworkRequest是基于AFNetworking二次封装的iOS网络框架，
     提供请求拦截器、响应缓存、JSON自动解析等功能，简化网络层代码，
-    支持组件化项目集成，兼容iOS 13.0及以上系统。
+    支持组件化项目集成，兼容iOS 12.0及以上系统。
   }
 
   s.homepage     = "https://github.com/zhangwen31/AWHBNetworkRequest"
@@ -25,9 +25,9 @@ Pod::Spec.new do |s|
   s.author             = { "王恒" => "1066026709@qq.com" }
   
   # 基础部署目标设置
-  s.platform = :ios, "13.0"
+  s.platform = :ios, "12.0"
   s.swift_version = "5.0"  # 若使用Swift，指定对应版本
-  s.ios.deployment_target = "13.0"
+  s.ios.deployment_target = "12.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -39,14 +39,14 @@ Pod::Spec.new do |s|
   s.static_framework = true  # 若为静态框架，保持此设置
   
   # ――― 部署目标强制兼容（核心修复） ――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  # 强制所有依赖库使用iOS 13.0，解决libarclite缺失问题
+  # 强制所有依赖库使用iOS 12.0，解决libarclite缺失问题
   s.pod_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
     "CLANG_ENABLE_MODULES" => "YES",
     "VALID_ARCHS" => "x86_64 arm64"  # 移除armv7（iOS 13+已不支持32位架构）
   }
   s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
+    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
   }
 
 
@@ -61,11 +61,11 @@ Pod::Spec.new do |s|
   # 修复：指定具体版本（与实际存在的版本匹配，避免部署目标冲突）
   s.dependency "AWHBoneRuntime"       # 匹配实际存在的版本
   s.dependency "AWHBoneResources"    # 匹配实际存在的版本
-  s.dependency "MBProgressHUD", "~> 1.1.0"        # 支持iOS 9.0+，兼容13.0
-  s.dependency "AFNetworking", "~> 4.0.1"         # 支持iOS 10.0+，兼容13.0
-  s.dependency "Masonry", "~> 1.1.0"              # 支持iOS 10.0+，兼容13.0
-  s.dependency "SDWebImage"          # 明确支持iOS 12.0+，兼容13.0
-  s.dependency "CocoaAsyncSocket", "~> 7.6.5"     # 支持iOS 9.0+，兼容13.0
-  s.dependency "YYModel", "~> 1.0.4"              # 1.0.5修复了部署目标问题，支持iOS 8.0+（通过xcconfig强制提升到13.0）
+  s.dependency "MBProgressHUD", "~> 1.1.0"        # 支持iOS 9.0+，兼容12.0
+  s.dependency "AFNetworking", "~> 4.0.1"         # 支持iOS 10.0+，兼容12.0
+  s.dependency "Masonry", "~> 1.1.0"              # 支持iOS 10.0+，兼容12.0
+  s.dependency "SDWebImage"          # 明确支持iOS 12.0+，兼容12.0
+  s.dependency "CocoaAsyncSocket", "~> 7.6.5"     # 支持iOS 9.0+，兼容12.0
+  s.dependency "YYModel", "~> 1.0.4"              # 1.0.5修复了部署目标问题，支持iOS 8.0+（通过xcconfig强制提升到12.0）
 
 end
