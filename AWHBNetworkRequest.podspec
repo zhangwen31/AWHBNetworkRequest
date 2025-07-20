@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
     "CLANG_ENABLE_MODULES" => "YES",
-    "VALID_ARCHS" => "x86_64 arm64",  # 仅保留64位架构（模拟器和真机）
+    "VALID_ARCHS" => "arm64",  # 仅保留64位架构（模拟器和真机）
   }
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
@@ -43,10 +43,10 @@ Pod::Spec.new do |s|
   # 依赖库（明确版本，修复）
   s.dependency 'AWHBoneRuntime'
   s.dependency 'AWHBoneResources'
-  s.dependency 'MBProgressHUD', '~> 1.1.0'
-  s.dependency 'AFNetworking', '~> 4.0.1'
-  s.dependency 'Masonry', '~> 1.1.0'
+  s.dependency 'MBProgressHUD'
+  s.dependency 'AFNetworking'
+  s.dependency 'Masonry'
   s.dependency 'SDWebImage'
-  s.dependency 'CocoaAsyncSocket', '~> 7.6.5'
-  #s.dependency 'YYModel', '~> 1.0.4'
+  s.dependency 'CocoaAsyncSocket'
+  s.dependency 'YYModel'
 end
