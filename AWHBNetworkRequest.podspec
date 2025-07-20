@@ -26,14 +26,16 @@ Pod::Spec.new do |s|
   s.source_files = 'AWHBNetworkRequest.framework/Headers/*.h'
   s.static_framework = true
 
-  # 部署目标与架构（核心修复）
+  # 强制所有依赖（包括YYModel）使用iOS 12.0和64位架构
   s.pod_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
     "CLANG_ENABLE_MODULES" => "YES",
-    "VALID_ARCHS" => "x86_64 arm64"  # 移除armv7（iOS 12+不支持32位）
+    "VALID_ARCHS" => "x86_64 arm64",  # 仅保留64位架构（模拟器和真机）
+    "OTHER_LDFLAGS" => "-ObjC"  # 确保链接器正确处理类别（Category）符号
   }
   s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
+    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
+    "VALID_ARCHS" => "x86_64 arm64"
   }
 
   # 编译配置
