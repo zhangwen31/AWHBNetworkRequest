@@ -9,8 +9,8 @@ Pod::Spec.new do |s|
   # 项目主页地址
   s.homepage     = "https://github.com/zhangwen31/AWHBNetworkRequest"
   # 许可证/所采用的授权版本
-  s.license      = 'MIT'
-  #s.license      = { :type => "MIT", :file => "LICENSE" }
+  #s.license      = 'MIT'
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   # 库的作者
   s.author       = { "王恒" => "1066026709@qq.com" }
   # 项目的地址
