@@ -1,45 +1,40 @@
 Pod::Spec.new do |s|
-
-  # 基本信息
+  # 名称，pod search 搜索的关键词,注意这里一定要和.podspec的名称一样,否则报错
   s.name         = "AWHBNetworkRequest"
+  # 版本号/库原代码的版本
   s.version      = "1.0.0"
+  # 简介
   s.summary      = "基于AFNetworking的iOS网络请求框架，支持拦截、缓存和JSON解析"
-  s.description  = %{
-    AWHBNetworkRequest是基于AFNetworking二次封装的iOS网络框架，
-    提供请求拦截器、响应缓存、JSON自动解析等功能，简化网络层代码，
-    支持组件化项目集成，兼容iOS 12.0及以上系统。
-  }
+
+  # 项目主页地址
   s.homepage     = "https://github.com/zhangwen31/AWHBNetworkRequest"
-
-  # 许可证（修复）
-  s.license      = { :type => "MIT", :file => "LICENSE" }  # 匹配实际文件名
-
-  # 作者与平台
+  # 许可证/所采用的授权版本
+  s.license      = 'MIT'
+  #s.license      = { :type => "MIT", :file => "LICENSE" }
+  # 库的作者
   s.author       = { "王恒" => "1066026709@qq.com" }
-  s.platform     = :ios, "12.0"
-  s.ios.deployment_target = "12.0"
-  s.swift_version = "5.0"
-
-  # 源码路径
+  # 项目的地址
   s.source       = { :git => "https://github.com/zhangwen31/AWHBNetworkRequest.git", :tag => "#{s.version}" }
   s.vendored_frameworks = ['AWHBNetworkRequest.framework']
   s.source_files = 'AWHBNetworkRequest.framework/Headers/*.h'
   s.static_framework = true
 
-  # 强制所有依赖（包括YYModel）使用iOS 12.0和64位架构
-  s.pod_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
-    "CLANG_ENABLE_MODULES" => "YES",
-    "VALID_ARCHS" => "arm64",  # 仅保留64位架构（模拟器和真机）
-  }
-  s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
-  }
+  # 支持的平台及版本
+  s.platform     = :ios, "13.0"
+  # iOS支持的pod最低版本 / iOS对应的版本
+  s.ios.deployment_target = "13.0"
 
-  # 编译配置
+  # 使用了第三方静态库
+  # s.ios.vendored_library = ''
+  #s.ios.vendored_libraries = ''
+  s.ios.vendored_frameworks = 'AWHBNetworkRequest.xcframework'
+
+  # 是否使用ARC，如果指定具体文件，则具体的问题使用ARC
   s.requires_arc = true
   s.prefix_header_file = 'AWHBNetworkRequest/AWHBNetworkRequest-PrefixHeader.pch'
 
+  s.swift_versions = ['5']
+    
   # 依赖库（明确版本，修复）
   s.dependency 'AWHBoneRuntime'
   s.dependency 'AWHBoneResources'
@@ -49,4 +44,5 @@ Pod::Spec.new do |s|
   s.dependency 'SDWebImage'
   s.dependency 'CocoaAsyncSocket'
   s.dependency 'YYModel'
+  
 end
