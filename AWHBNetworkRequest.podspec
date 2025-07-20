@@ -40,7 +40,7 @@ Pod::Spec.new do |s|
   s.pod_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
     "CLANG_ENABLE_MODULES" => "YES",
-    "VALID_ARCHS" => "x86_64 arm64"  # 移除armv7（iOS 13+已不支持32位架构）
+    "VALID_ARCHS" => "arm64"  # 移除armv7（iOS 13+已不支持32位架构） x86_64 
   }
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
