@@ -66,6 +66,6 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry', '~> 1.1.0'             # 支持iOS 10.0+，兼容12.0
   s.dependency 'SDWebImage'         # 明确支持iOS 12.0+，兼容12.0
   s.dependency 'CocoaAsyncSocket', '~> 7.6.5'     # 支持iOS 9.0+，兼容12.0
-  s.dependency 'YYModel‘, '~> 1.0.4'
+  s.dependency 'YYModel', '~> 1.0.4'
 
 end
