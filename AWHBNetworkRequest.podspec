@@ -31,7 +31,6 @@ Pod::Spec.new do |s|
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0",
     "CLANG_ENABLE_MODULES" => "YES",
     "VALID_ARCHS" => "x86_64 arm64",  # 仅保留64位架构（模拟器和真机）
-    "OTHER_LDFLAGS" => "-ObjC"  # 确保链接器正确处理类别（Category）符号
   }
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"
