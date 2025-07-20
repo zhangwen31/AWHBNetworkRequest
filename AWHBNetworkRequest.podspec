@@ -41,12 +41,12 @@ Pod::Spec.new do |s|
   s.prefix_header_file = 'AWHBNetworkRequest/AWHBNetworkRequest-PrefixHeader.pch'
 
   # 依赖库（明确版本，修复）
-  s.dependency 'AWHBoneRuntime', '~> 0.0.9'  # 替换为实际存在的版本
-  s.dependency 'AWHBoneResources', '~> 0.0.11'  # 替换为实际存在的版本
+  s.dependency 'AWHBoneRuntime'
+  s.dependency 'AWHBoneResources'
   s.dependency 'MBProgressHUD', '~> 1.1.0'
   s.dependency 'AFNetworking', '~> 4.0.1'
   s.dependency 'Masonry', '~> 1.1.0'
-  s.dependency 'SDWebImage', '~> 5.18.0'  # 明确支持iOS 12+
+  s.dependency 'SDWebImage'
   s.dependency 'CocoaAsyncSocket', '~> 7.6.5'
-  s.dependency 'YYModel', '~> 1.0.4'  
+  s.dependency 'YYModel', '~> 1.0.4'
 end
