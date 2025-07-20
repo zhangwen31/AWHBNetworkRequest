@@ -46,6 +46,6 @@ Pod::Spec.new do |s|
 
   # 5. 依赖库（静态框架依赖的其他库）
   s.dependency "AFNetworking", "~> 4.0"       # 依赖的第三方库（需与框架内部使用版本一致）
-  s.dependency "YYModel", "~> 1.0.5"          # 确保依赖库也支持静态链接
+  s.dependency "YYModel", "~> 1.0.4"          # 确保依赖库也支持静态链接
   s.dependency "Masonry", "~> 1.1.0"
 end
