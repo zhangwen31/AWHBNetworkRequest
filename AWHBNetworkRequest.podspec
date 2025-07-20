@@ -48,5 +48,5 @@ Pod::Spec.new do |s|
   s.dependency 'Masonry', '~> 1.1.0'
   s.dependency 'SDWebImage'
   s.dependency 'CocoaAsyncSocket', '~> 7.6.5'
-  s.dependency 'YYModel', '~> 1.0.4'
+  #s.dependency 'YYModel', '~> 1.0.4'
 end
