@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBNetworkRequest"
-  s.version      = "1.0.5"
+  s.version      = "1.0.0"
   s.summary      = "A short description of AWHBNetworkRequest."
 
   # This description is used to generate tags and improve search results.
@@ -51,7 +51,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
+  s.license      = "MIT"
 
 
   # ――― Author Metadata  作者元数据―――――――――――――――――――――――――――――― #
