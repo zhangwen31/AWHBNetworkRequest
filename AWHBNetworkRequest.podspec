@@ -82,12 +82,12 @@ Pod::Spec.new do |s|
   #  部署目标。您可以选择在平台之后包含目标。
   #
 
-  s.platform = :ios, "12.0"  # 确保你的库最低支持12.0
+  s.platform = :ios, "13.0"  # 确保你的库最低支持12.0
   s.pod_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"  # 强制依赖库使用12.0
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"  # 强制依赖库使用12.0
   }
   s.user_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "12.0"  # 强制用户项目使用12.0
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"  # 强制用户项目使用12.0
   }
   # s.platform     = :ios, "9.0"
 
