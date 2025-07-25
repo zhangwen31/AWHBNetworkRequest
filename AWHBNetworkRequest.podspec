@@ -179,7 +179,22 @@ Pod::Spec.new do |s|
    s.requires_arc = true
    
    # 公共头文件导进组件.pch文件中,加入后，执行pod install, MXStatService-prefix.pch 文件中就有这些头文件
-  s.prefix_header_file = 'AWHBNetworkRequest/AWHBNetworkRequest-PrefixHeader.pch'
+   s.prefix_header_contents = <<-EOS
+   #import <AWHBoneRuntime/AWHBoneRuntime.h>
+   #import <MBProgressHUD/MBProgressHUD.h>
+   #import <Masonry/Masonry.h>
+   #import <AFNetworking/AFNetworking.h>
+   #import <YYModel/YYModel.h>
+   #import <AWHBoneResources/AWHBoneResources.h>
+   #import <SDWebImage/SDWebImage.h>
+   
+   #ifndef __OPTIMIZE__
+   #define AWHBNRDebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
+   #else
+   #define AWHBNRDebugLog(...)
+   #endif
+   
+   EOS
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
