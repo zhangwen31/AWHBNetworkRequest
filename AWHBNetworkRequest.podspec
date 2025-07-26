@@ -129,7 +129,7 @@ s.user_target_xcconfig = {
 #
 #  s.public_header_files = "AWHBNetworkRequest/*.h"
 
-  s.vendored_frameworks = ['AWHBNetworkRequest.framework']
+  s.vendored_frameworks = ['AWHBNetworkRequest.xcframework']
 
   #s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
 
