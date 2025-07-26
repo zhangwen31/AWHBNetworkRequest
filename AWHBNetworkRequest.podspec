@@ -163,9 +163,8 @@ s.user_target_xcconfig = {
   #  其名称的lib前缀。
   #
 
-  s.xcframework  = "Foundation"
-  # s.xcframeworks = "SomeFramework", "AnotherFramework"
-#  s.vendored_framework = "#{s.name}.xcframework"
+  s.framework  = "Foundation"
+  # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
