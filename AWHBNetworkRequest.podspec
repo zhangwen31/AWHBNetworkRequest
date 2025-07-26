@@ -128,7 +128,7 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = ['AWHBNetworkRequest.framework']
 
-  #s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
+  s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
 
   s.source_files = 'AWHBNetworkRequest.framework/Headers/*h'
   s.static_framework = true
