@@ -201,7 +201,7 @@ Pod::Spec.new do |s|
   s.dependency "AWHBoneRuntime"
   s.dependency "MBProgressHUD"
   s.dependency "AFNetworking"
-  s.dependency "Masonry"
+  s.dependency "Masonry", '~> 1.1.0'
   s.dependency "SDWebImage"
   s.dependency "CocoaAsyncSocket"
   s.dependency "AWHBoneResources"
