@@ -129,7 +129,8 @@ Pod::Spec.new do |s|
 
   s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
 
-  s.source_files = 'AWHBNetworkRequest.framework/Headers/*h'
+  s.source_files = "AWHBNetworkRequest.framework/Headers/*.h"  # 确保Headers目录存在且包含.h文件
+  s.public_header_files = "AWHBNetworkRequest.framework/Headers/*.h"  # 公开头文件
   s.static_framework = true
 
   # ――― Resources 资源――――――――――――――――――――――――――――――――――― #
