@@ -84,23 +84,11 @@ Pod::Spec.new do |s|
 
   s.platform = :ios, "13.0"  # 确保你的库最低支持12.0
   s.pod_target_xcconfig = {
-    # 强制使用iOS 13.0作为最低部署目标
-    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
-  
-    # 仅保留64位架构（iOS 13+不支持32位）
-    "VALID_ARCHS" => "x86_64 arm64",
     "ARCHS" => "$(ARCHS_STANDARD_64_BIT)",
-  
-    # 强制静态链接（关键）
-    "MACH_O_TYPE" => "staticlib",
-    "CLANG_MODULES_AUTOLINK" => "NO",
-  
-    # 禁用bitcode（如果主框架不支持）
     "ENABLE_BITCODE" => "NO",
-  
-    # 避免重复链接系统库
-    "LD_RUNPATH_SEARCH_PATHS" => "$(inherited) @executable_path/Frameworks @loader_path/Frameworks"
-}
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'
+  }
 
 s.user_target_xcconfig = {
   "VALID_ARCHS" => "x86_64 arm64"
