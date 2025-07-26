@@ -220,6 +220,6 @@ s.user_target_xcconfig = {
   s.dependency "MBProgressHUD", "~> 1.1.0"         # 稳定版本
   s.dependency "AFNetworking", "~> 4.0.1"          # 兼容iOS 10+
   s.dependency "Masonry", "~> 1.1.0"               # 静态兼容
-  s.dependency "SDWebImage", "~> 5.1.1"           # 支持iOS 12+
+  s.dependency "SDWebImage", "~> 5.13.3"           # 支持iOS 12+
   s.dependency "CocoaAsyncSocket", "~> 7.6.5"      # 稳定版本
 end
