@@ -33,10 +33,15 @@ Pod::Spec.new do |s|
 
   # ――― 编译配置（核心修复） ―――――――――――――――――――――――――――――――――――― #
   s.pod_target_xcconfig = {
-    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",  # 强制依赖库使用13.0
-    "CLANG_ENABLE_MODULES" => "YES",
-    "VALID_ARCHS" => "x86_64 arm64"  # 移除armv7（iOS 13+不支持32位架构）
-  }
+    # 强制部署目标（覆盖YYModel的iOS 8.0）
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    # 仅保留arm64（真机）和x86_64（模拟器）架构
+    "VALID_ARCHS" => "arm64 x86_64",
+    "ARCHS" => "$(ARCHS_STANDARD_64_BIT)",  # 明确使用64位标准架构
+    # 强制静态链接（关键：与你的静态框架匹配）
+    "MACH_O_TYPE" => "staticlib",
+    "CLANG_MODULES_AUTOLINK" => "NO"  # 禁用自动链接动态库
+}
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"  # 强制用户项目兼容13.0
   }
