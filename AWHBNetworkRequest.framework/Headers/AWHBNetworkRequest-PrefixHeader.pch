@@ -12,7 +12,6 @@
 #import <MBProgressHUD/MBProgressHUD.h>
 #import <Masonry/Masonry.h>
 #import <AFNetworking/AFNetworking.h>
-#import <YYModel/YYModel.h>
 #import <AWHBoneResources/AWHBoneResources.h>
 #import <SDWebImage/SDWebImage.h>
 
