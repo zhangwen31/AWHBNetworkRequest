@@ -133,8 +133,8 @@ s.user_target_xcconfig = {
 
   #s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
 
-  s.source_files = "AWHBNetworkRequest.framework/Headers/*.h"  # 确保Headers目录存在且包含.h文件
-  s.public_header_files = "AWHBNetworkRequest.framework/Headers/*.h"  # 公开头文件
+  s.source_files = "AWHBNetworkRequest.xcframework/Headers/*.h"  # 确保Headers目录存在且包含.h文件
+  s.public_header_files = "AWHBNetworkRequest.xcframework/Headers/*.h"  # 公开头文件
   s.static_framework = true
 
   # ――― Resources 资源――――――――――――――――――――――――――――――――――― #
@@ -163,9 +163,9 @@ s.user_target_xcconfig = {
   #  其名称的lib前缀。
   #
 
-  s.framework  = "Foundation"
-  # s.frameworks = "SomeFramework", "AnotherFramework"
-#  s.vendored_framework = "#{s.name}.framework"
+  s.xcframework  = "Foundation"
+  # s.xcframeworks = "SomeFramework", "AnotherFramework"
+#  s.vendored_framework = "#{s.name}.xcframework"
 
   # s.library   = "iconv"
   # s.libraries = "iconv", "xml2"
