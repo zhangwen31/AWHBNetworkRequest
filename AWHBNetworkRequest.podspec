@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.name         = "AWHBNetworkRequest"
   s.version      = "1.0.0"
-  s.summary      = "A short description of AWHBNetworkRequest."
+  s.summary      = "AWHBNetworkRequest 是一个基于 AFNetworking 的 iOS 网络请求库。"
 
   # This description is used to generate tags and improve search results.
   # 此说明用于生成标记和改进搜索结果。
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   #   * 最后，不要担心缩进，CocoaPods会剥去它！
   s.description  = %{
-  TODO: 添加描述内容
+    AWHBNetworkRequest 支持链式调用、自动解析、常用 UI 组件集成，并提供便捷的接口封装，提升项目网络层开发效率。
   }
 
   s.homepage     = "https://github.com/zhangwen31/AWHBNetworkRequest"
