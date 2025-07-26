@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.author       = { "王恒" => "1066026709@qq.com" }
   s.platform     = :ios, "13.0"
   s.ios.deployment_target = "13.0"
-  s.vendored_frameworks = 'AWHBNetworkRequest.xcframework'
+  s.vendored_frameworks = 'AWHBNetworkRequest.framework'
   s.static_framework = true
   s.pod_target_xcconfig = {
     "ARCHS" => "$(ARCHS_STANDARD_64_BIT)",
