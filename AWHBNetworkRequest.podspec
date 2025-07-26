@@ -32,15 +32,18 @@ Pod::Spec.new do |s|
 
 
   # ――― 编译配置（核心修复） ―――――――――――――――――――――――――――――――――――― #
-  s.pod_target_xcconfig = {
-    # 强制部署目标（覆盖YYModel的iOS 8.0）
+ s.pod_target_xcconfig = {
+    # 强制部署目标匹配（iOS 13.0）
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
-    # 仅保留arm64（真机）和x86_64（模拟器）架构
-    "VALID_ARCHS" => "arm64 x86_64",
-    "ARCHS" => "$(ARCHS_STANDARD_64_BIT)",  # 明确使用64位标准架构
-    # 强制静态链接（关键：与你的静态框架匹配）
+    # 仅保留x86_64（模拟器）和arm64（真机）
+    "VALID_ARCHS" => "x86_64 arm64",
+    "ARCHS" => "$(ARCHS_STANDARD_64_BIT)",
+    # 强制静态链接（关键：避免动态库处理）
     "MACH_O_TYPE" => "staticlib",
-    "CLANG_MODULES_AUTOLINK" => "NO"  # 禁用自动链接动态库
+    # 禁用模块自动链接（防止动态依赖）
+    "CLANG_MODULES_AUTOLINK" => "NO",
+    # 确保使用最新SDK
+    "SDKROOT" => "iphoneos"
 }
   s.user_target_xcconfig = {
     "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"  # 强制用户项目兼容13.0
