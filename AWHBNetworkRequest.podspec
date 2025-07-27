@@ -85,6 +85,7 @@ Pod::Spec.new do |s|
   s.platform = :ios, "13.0"  # 确保你的库最低支持12.0
   # s.platform     = :ios, "9.0"
 
+
   #  When using multiple platforms
   s.ios.deployment_target = "13.0"
   # s.osx.deployment_target = "10.7"
@@ -122,7 +123,13 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks = ['AWHBNetworkRequest.framework']
 
-  s.pod_target_xcconfig = {'VALID_ARCHS' => 'x86_64 armv7 arm64'}
+  s.pod_target_xcconfig = {
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0",
+    'VALID_ARCHS' => 'x86_64 armv7 arm64'
+  }
+  s.user_target_xcconfig = {
+    "IPHONEOS_DEPLOYMENT_TARGET" => "13.0"
+  }
 
   s.source_files = 'AWHBNetworkRequest.framework/Headers/*h'
   s.static_framework = true
