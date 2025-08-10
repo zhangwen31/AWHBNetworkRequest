@@ -228,18 +228,6 @@
 		<data>
 		3beMO5EtgnVIOsrQPWs8aKjploo=
 		</data>
-		<key>AWHBoneResources.bundle/Album.png</key>
-		<data>
-		mS27keeeczNZvHZ3GRHyXz7Aa8Y=
-		</data>
-		<key>AWHBoneResources.bundle/Album@2x.png</key>
-		<data>
-		iKyfNiENiynX22A5187WUwfzFRM=
-		</data>
-		<key>AWHBoneResources.bundle/Album@3x.png</key>
-		<data>
-		Jcl6iCvSDEq7vPKUEucGnqC4t9E=
-		</data>
 		<key>AWHBoneResources.bundle/CAN数据@2x.png</key>
 		<data>
 		hTO8tYLg28O/s/dzyQB4wOCExXs=
@@ -1047,6 +1035,18 @@
 		<key>AWHBoneResources.bundle/alarm_processing_icon@3x.png</key>
 		<data>
 		cK0cuycxeQJ+TZxIa736nSmbdOk=
+		</data>
+		<key>AWHBoneResources.bundle/album.png</key>
+		<data>
+		mS27keeeczNZvHZ3GRHyXz7Aa8Y=
+		</data>
+		<key>AWHBoneResources.bundle/album@2x.png</key>
+		<data>
+		iKyfNiENiynX22A5187WUwfzFRM=
+		</data>
+		<key>AWHBoneResources.bundle/album@3x.png</key>
+		<data>
+		Jcl6iCvSDEq7vPKUEucGnqC4t9E=
 		</data>
 		<key>AWHBoneResources.bundle/areaIcon.png</key>
 		<data>
@@ -7828,15 +7828,6 @@
 		<data>
 		BinMzhOjPLw1ckdw4mJMWOpfzo8=
 		</data>
-		<key>AWHBoneResourcesLanguage.bundle/ar.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AWHBoneResourcesLanguage.bundle/ar.lproj/ChangeLanguage.strings</key>
 		<dict>
 			<key>hash</key>
@@ -7855,29 +7846,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/es.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AWHBoneResourcesLanguage.bundle/es.lproj/ChangeLanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			6t6pnGXA7wi8imXeTwobpfq6jEo=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/fr.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7891,29 +7864,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/ja.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AWHBoneResourcesLanguage.bundle/ja.lproj/ChangeLanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			iy6EGoWbRRN9m0WSbBGeoBm2sUg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/nl.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7927,29 +7882,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/pt.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AWHBoneResourcesLanguage.bundle/pt.lproj/ChangeLanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			KUKqvq808cT/fEfYxJhHYscGZtg=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/ru.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -7963,29 +7900,11 @@
 			<key>optional</key>
 			<true/>
 		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/th.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
 		<key>AWHBoneResourcesLanguage.bundle/th.lproj/ChangeLanguage.strings</key>
 		<dict>
 			<key>hash</key>
 			<data>
 			UHjby20/c//5dkC0qwc1R3WGIY8=
-			</data>
-			<key>optional</key>
-			<true/>
-		</dict>
-		<key>AWHBoneResourcesLanguage.bundle/vi.lproj/.DS_Store</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			3y++sUAKzaCQmjLBz2v0kvESHgc=
 			</data>
 			<key>optional</key>
 			<true/>
@@ -8059,7 +7978,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		detC8901jw0XZdkQFj9JBiZ3flc=
+		V5hbhoRfJ49FQkVBi3iSSysXMhI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -8682,39 +8601,6 @@
 			<key>hash2</key>
 			<data>
 			FpxlgquSemofppwClISfNu5sWx/aUKRuKt9gzNGQifU=
-			</data>
-		</dict>
-		<key>AWHBoneResources.bundle/Album.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mS27keeeczNZvHZ3GRHyXz7Aa8Y=
-			</data>
-			<key>hash2</key>
-			<data>
-			JvrH0skGht6rKF2QRG2kJHvb3qiOxWBZH0QGsmAlevY=
-			</data>
-		</dict>
-		<key>AWHBoneResources.bundle/Album@2x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			iKyfNiENiynX22A5187WUwfzFRM=
-			</data>
-			<key>hash2</key>
-			<data>
-			tAzt0VR7hB/PJkPa8idNQarHMO63D9YvER7rsgqmn9Q=
-			</data>
-		</dict>
-		<key>AWHBoneResources.bundle/Album@3x.png</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Jcl6iCvSDEq7vPKUEucGnqC4t9E=
-			</data>
-			<key>hash2</key>
-			<data>
-			E3KLsP0p1VxkpxWzaShZWGj6oSSaSKdCc7CUmp8M0Bw=
 			</data>
 		</dict>
 		<key>AWHBoneResources.bundle/CAN数据@2x.png</key>
@@ -10937,6 +10823,39 @@
 			<key>hash2</key>
 			<data>
 			FxWoTir7cTW/sPEvxqQjbRV0wbUgHXxJpXfZEv/mGMA=
+			</data>
+		</dict>
+		<key>AWHBoneResources.bundle/album.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			mS27keeeczNZvHZ3GRHyXz7Aa8Y=
+			</data>
+			<key>hash2</key>
+			<data>
+			JvrH0skGht6rKF2QRG2kJHvb3qiOxWBZH0QGsmAlevY=
+			</data>
+		</dict>
+		<key>AWHBoneResources.bundle/album@2x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			iKyfNiENiynX22A5187WUwfzFRM=
+			</data>
+			<key>hash2</key>
+			<data>
+			tAzt0VR7hB/PJkPa8idNQarHMO63D9YvER7rsgqmn9Q=
+			</data>
+		</dict>
+		<key>AWHBoneResources.bundle/album@3x.png</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Jcl6iCvSDEq7vPKUEucGnqC4t9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			E3KLsP0p1VxkpxWzaShZWGj6oSSaSKdCc7CUmp8M0Bw=
 			</data>
 		</dict>
 		<key>AWHBoneResources.bundle/areaIcon.png</key>
