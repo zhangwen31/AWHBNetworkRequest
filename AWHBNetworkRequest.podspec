@@ -23,7 +23,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "AWHBNetworkRequest"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "A short description of AWHBNetworkRequest."
 
   # This description is used to generate tags and improve search results.
@@ -187,12 +187,7 @@ Pod::Spec.new do |s|
    #import <AFNetworking/AFNetworking.h>
    #import <AWHBoneResources/AWHBoneResources.h>
    #import <SDWebImage/SDWebImage.h>
-   
-   #ifndef __OPTIMIZE__
-   #define AWHBNRDebugLog(s, ...) NSLog(@"%s(%d): %@", __FUNCTION__, __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
-   #else
-   #define AWHBNRDebugLog(...)
-   #endif
+   #import "AWHBNRMacro.h"
    
    EOS
 
